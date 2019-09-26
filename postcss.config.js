@@ -15,8 +15,8 @@ module.exports = {
       selectorBlackList: [],
 			minPixelValue: 1,
 			mediaQuery: false,
-			replace: true
-			// exclude: /(\/|\\)(node_modules)(\/|\\)/
+			replace: true,
+			exclude: /(\/|\\)(node_modules)(\/|\\)/
     }
   }
 };

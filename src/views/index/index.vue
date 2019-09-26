@@ -31,11 +31,5 @@ export default class Index extends Vue {
 }
 </script>
 <style lang="stylus">
-.obear-index-div
-  background-color red
-  width 375px
-  height 100px
-.obear-index-span
-  color white
-  font-size 14px
+@import './index.styl'
 </style>
