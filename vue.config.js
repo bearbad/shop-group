@@ -8,7 +8,7 @@ function getPages (path) {
     modArr.pop()
     let appName = modArr.pop()
     ret[appName] = Object.assign({}, {
-      entry: `src/views/${appName}/${appName}.js`,
+      entry: `src/views/${appName}/${appName}.ts`,
       template: `src/views/${appName}/${appName}.html`,
       filename: `${appName}.html`
     }, conf);
