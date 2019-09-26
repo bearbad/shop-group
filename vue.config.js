@@ -1,4 +1,5 @@
 const glob = require('glob');
+const tsImportPluginFactory = require('ts-import-plugin')
 
 function getPages (path) {
   const modules = glob.sync(path);
@@ -19,5 +20,21 @@ function getPages (path) {
 const pages = getPages('./src/views/**/config.json')
 
 module.exports = {
-  pages
+  pages,
+  chainWebpack: config => {
+    config.module
+      .rule('ts')
+      .use('ts-loader')
+      .loader('ts-loader')
+      .tap((options) => {
+        options.getCustomTransformers = () => ({
+          before: [tsImportPluginFactory({
+            libraryName: 'vant',
+            libraryDirectory: "es",
+            style: true
+          })]
+        })
+        return options
+      })
+  }
 };

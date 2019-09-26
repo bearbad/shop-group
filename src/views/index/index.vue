@@ -3,7 +3,7 @@
     <div class="obear-index-div">
       <span class="obear-index-span">{{ msg }}</span>
     </div>
-     - {{ computedMsg }}
+    <van-button type="warning">警告按钮</van-button>
   </section>
 </template>
 <script lang="ts">
