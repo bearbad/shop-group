@@ -29,7 +29,7 @@ export default class Index extends Vue {
   mounted() {
     this.add(100);
     getIndex().then((res: any) => {
-      console.log(res.data);
+      console.log(res);
     });
   }
 }
