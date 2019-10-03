@@ -1,0 +1,16 @@
+[
+  {
+    "include": "option-req.json"
+  },
+  {
+    "request": {
+       "method": "post"
+     },
+     "response": {
+       "headers": {
+         "Access-Control-Allow-Origin": "*"
+       }
+     },
+     "include": "index.json"
+   }
+]

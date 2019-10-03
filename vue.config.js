@@ -1,5 +1,10 @@
 const glob = require('glob');
 const tsImportPluginFactory = require('ts-import-plugin')
+const path = require('path')
+
+function resolve(dir) {
+	return path.join(__dirname, dir)
+}
 
 function getPages (path) {
   const modules = glob.sync(path);
@@ -36,5 +41,9 @@ module.exports = {
         })
         return options
       })
+     config.resolve.alias
+      .set('@', resolve('src'))
+      .set('assets', resolve('src/assets'))
+      .set('components', resolve('src/components'))
   }
 };

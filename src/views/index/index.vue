@@ -8,6 +8,7 @@
 </template>
 <script lang="ts">
 import { Component, Provide, Vue } from "vue-property-decorator";
+import { getIndex } from "@/api/test";
 
 @Component({
   components: {}
@@ -27,6 +28,9 @@ export default class Index extends Vue {
 
   mounted() {
     this.add(100);
+    getIndex().then((res: any) => {
+      console.log(res.data);
+    });
   }
 }
 </script>

@@ -1,0 +1,16 @@
+[
+  {
+    "request": {
+      "uri": "/index"
+    },
+    "response": {
+      "json": {
+        "code": 200,
+        "msg": "成功",
+        "data": {
+          "msg": "成功"
+        }
+      }
+    }
+  }
+]
