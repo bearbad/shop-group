@@ -8,12 +8,14 @@
 </template>
 <script lang="ts">
 import { Component, Provide, Vue } from "vue-property-decorator";
+import { mixins } from "vue-class-component";
 import { getIndex } from "@/api/test";
+import mixin from "./mixins/mixin";
 
 @Component({
   components: {}
 })
-export default class Index extends Vue {
+export default class Index extends mixins(mixin) {
   @Provide() msg: string = "Welcome to Your Vue.js App";
 
   get computedMsg() {
