@@ -3,8 +3,8 @@ import App from "./index.vue";
 
 import "normalize.css";
 
-import { Button } from "vant";
-Vue.use(Button);
+import { Button, Swipe, SwipeItem, Lazyload } from "vant";
+Vue.use(Button).use(Swipe).use(SwipeItem).use(Lazyload);
 
 Vue.config.productionTip = false;
 

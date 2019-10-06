@@ -1,9 +1,10 @@
 <template>
   <section class="obear-index">
-    <div class="obear-index-div">
+    <swipe-index></swipe-index>
+    <!-- <div class="obear-index-div">
       <span class="obear-index-span">{{ msg }}</span>
     </div>
-    <van-button type="warning">警告按钮</van-button>
+    <van-button type="warning">警告按钮</van-button> -->
   </section>
 </template>
 <script lang="ts">
@@ -12,8 +13,11 @@ import { mixins } from "vue-class-component";
 import { getIndex } from "@/api/test";
 import mixin from "./mixins/mixin";
 
+import SwipeIndex from "./modules/swipe/index.vue";
 @Component({
-  components: {}
+  components: {
+    SwipeIndex
+  }
 })
 export default class Index extends mixins(mixin) {
   @Provide() msg: string = "Welcome to Your Vue.js App";
