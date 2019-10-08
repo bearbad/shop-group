@@ -23,6 +23,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .gm-swipe
+  height 280px
   img
     display block
     width 750px
