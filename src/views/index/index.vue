@@ -2,6 +2,7 @@
   <section class="obear-index">
     <swipe-index></swipe-index>
     <grid-index></grid-index>
+    <one></one>
     <!-- <div class="obear-index-div">
       <span class="obear-index-span">{{ msg }}</span>
     </div>
@@ -16,10 +17,12 @@ import mixin from "./mixins/mixin";
 
 import SwipeIndex from "./modules/swipe/index.vue";
 import GridIndex from "./modules/grid/index.vue";
+import One from "./modules/list/one.vue";
 @Component({
   components: {
     SwipeIndex,
-    GridIndex
+    GridIndex,
+    One
   }
 })
 export default class Index extends mixins(mixin) {

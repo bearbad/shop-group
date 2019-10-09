@@ -1,6 +1,6 @@
 <template>
   <section class="gm-swipe">
-    <van-swipe :autoplay="5000" indicator-color="white">
+    <van-swipe :autoplay="50000" indicator-color="white">
       <van-swipe-item v-for="(image, index) in images" :key="index">
         <img v-lazy="image"/>
       </van-swipe-item>
@@ -23,8 +23,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .gm-swipe
-  height 280px
   img
     display block
     width 750px
+    height 280px
 </style>
