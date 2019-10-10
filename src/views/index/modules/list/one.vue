@@ -5,7 +5,7 @@
     </div>
     <div class="obear-one-content flex-column flex-1">
       <div class="obear-one-content__top flex-1">
-        <span class="dis-block">万和(Vanward) JSQ25-13L3 13升 零冷水 咖啡棕 燃气热水器 花洒一开</span>
+        <span class="dis-block ellipsis2">万和(Vanward) JSQ25-13L3 13升 零冷水 咖啡棕 燃气热水器 花洒一开123123123123</span>
       </div>
       <div class="obear-one-content__center flex-row flex-1 flex-left flex-middle">
         <div>国美价￥3299</div>
