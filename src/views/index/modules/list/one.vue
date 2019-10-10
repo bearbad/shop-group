@@ -19,7 +19,7 @@
           <span>￥3299</span> 
         </div>
         <div class="flex-1 t-a-right">
-          <span>马上抢</span>
+          <span class="btn">马上抢</span>
         </div>
       </div>
     </div>
@@ -47,10 +47,23 @@ export default {
         font-size $font-size-md * 2
     &__center
       div
+        color $gray-dark
         font-size $font-size-md
     &__bottom
       div
+        color $red-dark
         font-size $font-size-md
       div:not(:last-child)
         width 100px
+      div:last-child
+        span
+          display inline-block
+          background-color $red-dark
+          text-align center
+          line-height 60px
+          color white
+          font-size 28px
+          width 150px
+          height 60px
+          border-radius 5px
 </style>
