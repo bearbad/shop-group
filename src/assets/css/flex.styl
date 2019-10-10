@@ -2,8 +2,8 @@ $total-count = 24
 
 flex-clearfix()
   &:before, &:after
-      content " "
-      display flex
+      content ""
+      display block
       box-sizing border-box
       width 0
       height 0
@@ -14,7 +14,6 @@ flex-clearfix()
 .flex-column, .flex-row
   display flex
   flex-wrap wrap
-  flex-clearfix()
 
 .flex-column
   flex-direction column

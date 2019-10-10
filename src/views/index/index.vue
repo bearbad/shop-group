@@ -47,5 +47,5 @@ export default class Index extends mixins(mixin) {
 }
 </script>
 <style lang="stylus">
-@import './index.styl'
+@import '~@/assets/css/comm.styl';
 </style>

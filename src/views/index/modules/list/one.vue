@@ -5,7 +5,7 @@
     </div>
     <div class="obear-one-content flex-column flex-1">
       <div class="obear-one-content__top flex-1">
-        <span class="dis-block">万和(Vanward) JSQ25-13L3 13升 零冷水 咖啡棕 燃气热水器 花洒一开 热水即来</span>
+        <span class="dis-block">万和(Vanward) JSQ25-13L3 13升 零冷水 咖啡棕 燃气热水器 花洒一开</span>
       </div>
       <div class="obear-one-content__center flex-row flex-1 flex-left flex-middle">
         <div>国美价￥3299</div>
@@ -31,7 +31,6 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-@import '~@/assets/css/comm.styl';
 .obear-one
   height $goods-cell-height
   padding $goods-cell-padding
@@ -45,7 +44,7 @@ export default {
     padding 0 20px
     &__top
       span
-        font-size $font-size-md
+        font-size $font-size-md * 2
     &__center
       div
         font-size $font-size-md
