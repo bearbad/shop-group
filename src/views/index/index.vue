@@ -3,7 +3,8 @@
     <swipe-index></swipe-index>
     <grid-index></grid-index>
     <one></one>
-    <mult></mult>
+    <!-- <exam></exam> -->
+    <!-- <mult></mult> -->
     <!-- <div class="obear-index-div">
       <span class="obear-index-span">{{ msg }}</span>
     </div>
@@ -20,12 +21,15 @@ import SwipeIndex from "./modules/swipe/index.vue";
 import GridIndex from "./modules/grid/index.vue";
 import One from "./modules/list/one.vue";
 import Mult from "./modules/list/mult.vue";
+
+import Exam from "./modules/example/example.vue";
 @Component({
   components: {
     SwipeIndex,
     GridIndex,
     One,
-    Mult
+    Mult,
+    Exam
   }
 })
 export default class Index extends mixins(mixin) {

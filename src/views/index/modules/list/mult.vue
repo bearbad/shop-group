@@ -18,5 +18,5 @@ export default class mult extends Vue {
 .m-column
   width calc(100%/2)
   height 300px
-  background-color red
+  // background-color red
 </style>
